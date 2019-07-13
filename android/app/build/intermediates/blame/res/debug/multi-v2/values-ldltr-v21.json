@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\reactProject\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ldltr-v21\\values-ldltr-v21.xml",
+            "outputFile": "D:\\finalTest\\RNN-Template\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ldltr-v21\\values-ldltr-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ibrahim\\.gradle\\caches\\transforms-2\\files-2.1\\d7cc497688216c96afae6eb77cffc549\\res\\values-ldltr-v21\\values-ldltr-v21.xml",

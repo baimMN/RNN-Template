@@ -1,30 +1,105 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
+
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {StyleSheet,TextInput, View,ActivityIndicator} from 'react-native';
+import {connect} from 'react-redux'
+import axios from 'axios'
+import {Navigation} from 'react-native-navigation'
+import Entypo from 'react-native-vector-icons/Entypo'//eye/eye-off
+import { Container, Header, Title, Content, Footer,Label, FooterTab, Button, Left, Right, Body, Icon, Text,Item,Input } from 'native-base'
+import Axios from 'axios';
+import {PulseIndicator} from 'react-native-indicators'
+const url='http://192.168.0.13:3333/api/v1'
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+class App extends Component {
+  constructor(){
+    super()
+    this.state={
+        borderColor:'rgb(82, 148, 255)',
+        email:'',
+        name:'',
+        loading:true,
+        warning:'false',
+        phoneNumber:''
+    }
+  }
 
-type Props = {};
-export default class App extends Component<Props> {
+  register=()=> {
+    this.setState({loading:true})
+    const {name,email,phoneNumber} = this.state
+    if(!name || !email || !phoneNumber){
+      this.setState({warning:'field tidak bisa kosong'})
+      return false
+    }
+    axios.post(url+'/register',{
+      name,
+      email,
+      phoneNumber
+    })
+      .then(res => {
+        if(res.data.warning){
+          alert('haiiii')
+        }else {
+          // alert('adasd')
+          // alert('adas')
+          // const {token}=res.data.token
+          this.props.saveUser(name,email,phoneNumber)
+          Navigation.setRoot({
+            root: {
+              stack:{
+                children:[
+                  {
+                    component:{
+                      name:'Home',
+                      id:'Home'
+                    }
+                  }
+                ],
+                options:{
+                  topBar:{
+                    height:0
+                  }
+                }
+              }
+            }
+          })
+        }
+      })
+      .catch(err => alert(err))
+  }
+
+  focus=()=> {
+    console.log('asad')
+  }
+
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
+      <Container>
+        <Content>
+            <View style={{marginTop:40,flex:1,width:'100%',padding:10}}> 
+                <Text style={{alignSelf:'center',fontSize:40}}>Register</Text>
+                <Item floatingLabel style={{marginTop:10,borderColor:this.state.borderColor}}>
+                    <Label>Name</Label>
+                    <Input onChangeText={(text)=> this.setState({name:text})} />
+                </Item>
+                <Item floatingLabel last style={{marginTop:10,borderColor:this.state.borderColor}}>
+                    <Label>Email</Label>
+                    <Input onChangeText={(text)=> this.setState({email:text})} />
+                </Item>
+                <Item floatingLabel last style={{marginTop:10,borderColor:this.state.borderColor}}>
+                    <Label>Phone Number</Label>
+                    <Input onChangeText={(text)=> this.setState({phoneNumber:text})}/>
+                </Item>
+                <Button block rounded onPress={() => this.register()} style={{backgroundColor:'rgb(120, 172, 255)',marginTop:30}}>
+                    <Text>Register</Text>
+                </Button>
+                <View style={{marginTop:15,flex:1,width:'100%',padding:10}}>
+                    <Text style={{color:'red',alignSelf:'center'}}>asdddddddddad  </Text>
+                </View>
+            </View>
+        </Content>
+      </Container>
     );
   }
 }
@@ -47,3 +122,13 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+mapStateToProps=state => ({
+  test:state.root.test
+})
+
+dispatchAction=(dispatch) => ({
+  saveUser: (name,email,token) => {dispatch({type:"SAVE_USER",name,email,token})}
+})
+
+export default connect(mapStateToProps,dispatchAction)(App)

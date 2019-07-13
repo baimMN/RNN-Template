@@ -1,23 +1,44 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\reactProject\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "D:\\finalTest\\RNN-Template\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "D:\\reactProject\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "D:\\finalTest\\RNN-Template\\node_modules\\react-native-navigation\\lib\\android\\app\\build\\intermediates\\packaged_res\\reactNative57_5\\debug\\values\\values.xml",
                     "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "49",
-                        "endOffsets": "61"
+                        "startLines": "2,3,4,5,6,7,8,12,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,93,146,191,246,300,352,593,716",
+                        "endLines": "2,3,4,5,6,7,11,14,18",
+                        "endColumns": "37,52,44,54,53,51,12,12,12",
+                        "endOffsets": "88,141,186,241,295,347,588,711,884"
                     },
                     "to": {
-                        "startLines": "520",
+                        "startLines": "342,427,438,455,549,550,2026,2609,2985",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "22077,27096,27618,28402,35991,36045,132538,172633,197294",
+                        "endLines": "342,427,438,455,549,550,2029,2611,2988",
+                        "endColumns": "37,52,44,54,53,51,12,12,12",
+                        "endOffsets": "22110,27144,27658,28452,36040,36092,132774,172751,197462"
+                    }
+                },
+                {
+                    "source": "D:\\finalTest\\RNN-Template\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3",
                         "startColumns": "4",
-                        "startOffsets": "32681",
-                        "endColumns": "49",
-                        "endOffsets": "32726"
+                        "startOffsets": "57",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "182"
+                    },
+                    "to": {
+                        "startLines": "580",
+                        "startColumns": "4",
+                        "startOffsets": "38912",
+                        "endLines": "582",
+                        "endColumns": "12",
+                        "endOffsets": "39035"
                     }
                 },
                 {
@@ -59,7 +80,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ibrahim\\.gradle\\caches\\transforms-2\\files-2.1\\6d402e733f71d505ceebedcd37049130\\res\\values\\values.xml",
+                    "source": "C:\\Users\\ibrahim\\.gradle\\caches\\transforms-2\\files-2.1\\1cdd13456d57a4093e8628a561416fbf\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,42,45,48,51,54,58,62,65,68,71,74,75,76,83,90,93,96,99,105",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -152,22 +173,20 @@
                     }
                 },
                 {
-                    "source": "D:\\reactProject\\node_modules\\react-native-navigation\\lib\\android\\app\\build\\intermediates\\packaged_res\\reactNative57_5\\debug\\values\\values.xml",
+                    "source": "D:\\finalTest\\RNN-Template\\android\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,12,15",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,93,146,191,246,300,352,593,716",
-                        "endLines": "2,3,4,5,6,7,11,14,18",
-                        "endColumns": "37,52,44,54,53,51,12,12,12",
-                        "endOffsets": "88,141,186,241,295,347,588,711,884"
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "17",
+                        "endColumns": "49",
+                        "endOffsets": "62"
                     },
                     "to": {
-                        "startLines": "342,427,438,455,549,550,2026,2609,2985",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "22077,27096,27618,28402,35991,36045,132538,172633,197294",
-                        "endLines": "342,427,438,455,549,550,2029,2611,2988",
-                        "endColumns": "37,52,44,54,53,51,12,12,12",
-                        "endOffsets": "22110,27144,27658,28452,36040,36092,132774,172751,197462"
+                        "startLines": "520",
+                        "startColumns": "4",
+                        "startOffsets": "32681",
+                        "endColumns": "49",
+                        "endOffsets": "32726"
                     }
                 },
                 {
@@ -202,25 +221,6 @@
                         "startOffsets": "8418,25943,25996,26049,26102,153414,153590,153712,153974,154169",
                         "endColumns": "88,52,52,52,52,65,121,60,65,66",
                         "endOffsets": "8502,25991,26044,26097,26150,153475,153707,153768,154035,154231"
-                    }
-                },
-                {
-                    "source": "D:\\reactProject\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "54",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "177"
-                    },
-                    "to": {
-                        "startLines": "580",
-                        "startColumns": "4",
-                        "startOffsets": "38912",
-                        "endLines": "582",
-                        "endColumns": "12",
-                        "endOffsets": "39035"
                     }
                 },
                 {

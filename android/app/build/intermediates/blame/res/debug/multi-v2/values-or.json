@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\reactProject\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-or\\values-or.xml",
+            "outputFile": "D:\\finalTest\\RNN-Template\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-or\\values-or.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ibrahim\\.gradle\\caches\\transforms-2\\files-2.1\\4b531fee4df2f96ab9b07101641fb016\\res\\values-or\\values-or.xml",
