@@ -9,7 +9,7 @@ import Entypo from 'react-native-vector-icons/Entypo'//eye/eye-off
 import { Container, Header, Title, Content, Footer,Label, FooterTab, Button, Left, Right, Body, Icon, Text,Item,Input } from 'native-base'
 import Axios from 'axios';
 import {PulseIndicator} from 'react-native-indicators'
-const url='http://192.168.0.13:3333/api/v1'
+const url='http://192.168.0.13:3333/api/v1';
 
 class App extends Component {
   constructor(){
